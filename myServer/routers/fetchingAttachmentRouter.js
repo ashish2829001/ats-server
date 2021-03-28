@@ -17,7 +17,7 @@ router.post('/fetchAttachments',auth, async (req, res) => {
         var imap = new Imap({
             user: req.myuser.gmailId,
             password: req.myuser.gmailPassword,
-            host: 'imap.gmail.com',
+            host: 'https://ats-server-frshr.herokuapp.com',
             port: 993,
             tls: true,
             // connTimeout: 10000,
