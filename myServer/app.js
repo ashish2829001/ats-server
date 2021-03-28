@@ -1,6 +1,6 @@
 //Including require modules
 var base64 = require('base64-stream');
-var Imap = require('imap');
+var Imap = require('node-imap');
 var fs = require('fs');
 const uniqid    =   require('uniqid');
 const path      =   require('path');
