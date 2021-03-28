@@ -17,10 +17,9 @@ router.post('/fetchAttachments',auth, async (req, res) => {
         var imap = new Imap({
             user: req.myuser.gmailId,
             password: req.myuser.gmailPassword,
-            host: 'imap.gmail.com',
-            servername: 'imap.gmail.com',
+            host: 'smtp.gmail.com',
             port: 993,
-            tls: true,
+            secure: true,
             // connTimeout: 10000,
             // authTimeout: 5000,
             tlsOptions: {
